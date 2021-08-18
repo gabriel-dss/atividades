@@ -1,0 +1,15 @@
+import random
+aleatorio = random.randrange(1, 101)
+numeros_geraveis = int(aleatorio)
+chance = input("adivinhe o numero ")
+adivinha = chance
+
+
+class geracao:
+    def __init__(self, numeros_geraveis, adivinha):
+        self.numeros_geraveis = numeros_geraveis
+        self.adivinha = adivinha
+    if adivinha == numeros_geraveis:
+        print("acertou")
+    else:
+        print(f'errou o numero era {numeros_geraveis}')
