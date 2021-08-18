@@ -1,0 +1,12 @@
+
+class email:
+
+    def __init__(self, nome, numero, email_de_validacao):
+        self.nome = nome
+        self.numero = numero
+        self.emailDeValidacao = email_de_validacao
+
+    nomeDoUsuario = input("insira nome")
+    numeroDoUsuario = input("insira numero")
+    emailDoUsuario = input("insira email de segurança")
+    
