@@ -1,0 +1,34 @@
+def __init__(self, nome, imc, peso, idade):
+    self.nome = nome
+    self.IMC = imc
+    self.peso = peso
+    self.idade = idade
+
+
+def perguntas(nome, imc, peso, idade):
+    nome = input("qual o seu nome")
+    imc = input("qual o seu imc")
+    peso = input("qual o seu peso")
+    idade = input("qual é sua idade")
+    gater = float(imc)
+
+    if gater >= 25:
+        print("você não esta apto a participar do time")
+        exit()
+    else:
+        semana = input("Quantas vezes você treina por semana?")
+        sessao = input("Aproximadamente quantos minutos por sessão de treino?")
+        semanas = float(semana)
+        sessoes = float(sessao)
+        minutos = semanas*sessoes
+
+        if minutos <= 300:
+            print("Muito obrigado, agradecemos a sua participação!")
+            exit()
+        elif minutos > 300:
+            print("Parabéns, você passou em todos os nossos testes, agora você fará um teste pessoal"
+                  " em nossa sede, favor "
+                  "comparecer ao endereço: Rua dos Atletas, 43, Bairro do Futebol. Nos vemos lá!")
+
+
+Nome = perguntas("nome", "peso", "imc", "idade")
