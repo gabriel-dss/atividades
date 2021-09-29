@@ -1,0 +1,31 @@
+class dados_do_usuario:
+
+    def __init__(self, codigo, banco, valor, descricao):
+        self.codigo = codigo
+        self.banco = banco
+        self.valor = valor
+        self.descricao = descricao
+
+    def pergunta_codigo(self):
+        input("qual o codigo?")
+        if input in codigo_bancos is True:
+            input.__str__()
+        else:
+            print("codigo invalido, tente outra vez")
+            
+    def define_banco(self):
+        if self.codigo == 184:
+          self.define_banco = "Itaú"
+        if self.codigo == 204:
+            self.define_banco = "Bradesco"
+        if self.codigo == 1:
+            self.define_banco = "Banco do Brasil"
+        if self.codigo == 104:
+            self.define_banco = "Caixa Econômica Federal"
+            
+    def pergunta_valor(self):
+        input("qual o valor?")
+
+
+    def insira_descricao(self):
+        input("insira a definição do pagamento")
